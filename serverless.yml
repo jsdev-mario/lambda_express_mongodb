@@ -1,0 +1,18 @@
+service: lambda-express
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  profile: tennis-jaon
+  region: us-east-1
+
+functions:
+  server:
+    handler: index.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
