@@ -4,7 +4,7 @@
   "description": "",
   "main": "handler.js",
   "dependencies": {
-    "aedes": "^0.40.1",
+    "aedes": "^0.42.1",
     "aws-serverless-express": "^3.3.6",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
